@@ -1,0 +1,62 @@
+
+<app-header titulo="Observaciones"></app-header>
+<ion-content>
+    <ion-list>
+        <ion-item>
+  
+        <ion-label position="floating">Poblacion </ion-label>
+        <ion-input type="text"
+                     [(ngModel)]="poblacion"></ion-input>
+         </ion-item>
+       
+    </ion-list>
+
+    <ion-list>
+      <ion-item>
+
+      <ion-label position="floating">Cria</ion-label>
+      <ion-input type="text"
+                   [(ngModel)]="cria"></ion-input>
+       </ion-item>
+    </ion-list>
+
+       <ion-list>
+        <ion-item>
+  
+        <ion-label position="floating">Limpieza</ion-label>
+        <ion-input type="text"
+                     [(ngModel)]="limpieza"></ion-input>
+         </ion-item>
+               </ion-list>
+         <ion-list>
+            <ion-item>
+      
+            <ion-label position="floating">Observaciones</ion-label>
+            <ion-input type="text"
+                         [(ngModel)]="observaciones"></ion-input>
+             </ion-item>
+            </ion-list>
+
+             <ion-list>
+                <ion-item>
+          
+                <ion-label position="floating">Otra</ion-label>
+                <ion-input type="text"
+                             [(ngModel)]="otra"></ion-input>
+                 </ion-item>
+                </ion-list>
+
+                 <ion-list>
+                    <ion-item>
+              
+                    <ion-label position="floating">Próxima Revisión</ion-label><br>
+
+                    <ion-input type="date"
+                                 [(ngModel)]="revision"></ion-input>
+                     </ion-item>
+                    </ion-list> 
+
+                    <ion-button expand="full" type="submit" color="warning">
+                     Guardar
+                   </ion-button>
+</ion-content>

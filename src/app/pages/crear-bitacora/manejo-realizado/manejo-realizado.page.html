@@ -1,0 +1,43 @@
+<app-header titulo="Manejo Realizado"></app-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-item>
+  
+        <ion-label position="floating">Actividad Realizada</ion-label>
+        <ion-input type="text"
+                     [(ngModel)]="actividad"></ion-input>
+         </ion-item>
+    </ion-list>
+
+         <ion-list>
+            <ion-item>
+      
+            <ion-label position="floating">Alimentación</ion-label>
+            <ion-input type="text"
+                         [(ngModel)]="alimentacion"></ion-input>
+             </ion-item>
+         </ion-list>
+    <ion-list>
+        <ion-item>
+  
+        <ion-label position="floating">Cantidad de alimento</ion-label>
+            <ion-input type="number"
+                     [(ngModel)]="cantidad"></ion-input>
+         </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-item>
+  
+        <ion-label position="floating">Gasto generado</ion-label>
+        <ion-input type="number"
+                     [(ngModel)]="gasto"></ion-input>
+         </ion-item>
+    </ion-list>
+
+    <ion-button expand="full" type="submit" color="warning">
+        Guardar
+      </ion-button>
+</ion-content>

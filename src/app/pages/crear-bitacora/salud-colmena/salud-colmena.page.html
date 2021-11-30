@@ -1,0 +1,40 @@
+<app-header titulo="Salud colmena"></app-header>
+
+
+<ion-content>
+<ion-list>
+
+      <ion-item>
+        <ion-label>Plagas</ion-label>
+        <ion-select multiple="true" [value]="['', '', '']">
+          <ion-select-option value="hormiga">Hormiga</ion-select-option>
+          <ion-select-option value="barroa">Barroa</ion-select-option>
+          <ion-select-option value="escarabajo">Escarabajo</ion-select-option>
+          <ion-select-option value="ninguna">Ninguna</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+               <p><b>Tratramiento</b> </p>
+              <ion-item>
+               <ion-label position="floating">Producto Utilizado</ion-label>
+               <ion-input type="text"
+                            [(ngModel)]="producto"></ion-input>
+                </ion-item>
+                
+                <ion-item>
+                <ion-label position="floating">Dosis aplicada</ion-label>
+               <ion-input type="text"
+                            [(ngModel)]="dosis"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label position="floating">Gasto</ion-label>
+                 <ion-input type="text"
+                              [(ngModel)]="gasto"></ion-input>
+                  </ion-item>
+  
+                  <ion-button expand="full" type="submit" color="warning">
+                    Guardar
+                  </ion-button>
+</ion-list>
+</ion-content>

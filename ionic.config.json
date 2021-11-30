@@ -1,0 +1,7 @@
+{
+  "name": "appbee",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

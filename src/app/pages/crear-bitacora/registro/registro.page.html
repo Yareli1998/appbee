@@ -1,0 +1,39 @@
+<app-header titulo="Registro"></app-header>
+
+<ion-content>
+    <ion-list>
+          <ion-item>
+    
+          <ion-label position="floating">No. de caja <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input type="text"
+                       [(ngModel)]="nodecaja"></ion-input>
+           </ion-item>
+         
+      </ion-list>
+
+      <ion-list>
+        <ion-item>
+  
+        <ion-label position="floating">No. de colmena de origen <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input type="text"
+                     [(ngModel)]="no_de_colmenaorigen"></ion-input>
+         </ion-item>
+       
+    </ion-list>
+
+    <ion-list>
+        <ion-item>
+  
+        <ion-label position="floating">Fecha de Creación</ion-label><br>
+
+        <ion-input type="date"
+                     [(ngModel)]="fecha"></ion-input>
+         </ion-item>
+       
+    </ion-list>
+
+    <ion-button expand="full" type="submit" color="warning">
+        Guardar
+      </ion-button>
+    
+</ion-content>

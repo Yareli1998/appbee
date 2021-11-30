@@ -1,0 +1,38 @@
+
+<app-header titulo="Crear Bitácora" ></app-header>
+
+  
+<ion-content>
+ 
+ <!--   <ion-button (click)="presentAlert()" expand="block">
+       Datos Generales
+   </ion-button>
+
+   <ion-button (click)="presentAlertMultipleButtons()" expand="block">
+    Datos Generales
+</ion-button> -->
+
+  <!--<ion-button (click)="presentAlertPrompt()" expand="block" color="warning">
+    Datos Generales
+</ion-button>
+<ion-button (click)="presentAlertPrompt1()" expand="block" color="warning">
+   Registro
+</ion-button>
+<ion-button (click)="presentAlertPrompt2()" expand="block" color="warning">
+    Manejo Realizado
+ </ion-button>
+
+ <ion-button (click)="presentAlertRadio()" expand="block" color="warning">
+    Salud de colmena
+ </ion-button>-->
+ <ion-list>
+    
+    
+    <ion-item *ngFor="let c of componentes"
+               [routerLink]="c.redirectTo"
+               detail>
+      <ion-icon [name]="c.icon" slot="start" color="warning"></ion-icon>
+        {{c.name}}
+    </ion-item> 
+  </ion-list>
+</ion-content>

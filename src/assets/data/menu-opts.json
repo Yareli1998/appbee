@@ -1,0 +1,27 @@
+[
+    {
+        "icon": "today-outline",
+        "name": "Agenda",
+        "redirecTo": "/agenda"
+    },
+    {
+        "icon": "today-outline",
+        "name": "Crear Bitácora",
+        "redirecTo": "/crear-bitacora"
+    },
+    {
+        "icon": "today-outline",
+        "name": "Ver Bitácora",
+        "redirecTo": "/ver-bitacora"
+    },
+    {
+        "icon": "today-outline",
+        "name": "Perfil",
+        "redirecTo": "/inicio-sesion"
+    },
+    {
+        "icon": "today-outline",
+        "name": "Salir",
+        "redirecTo": "/inicio-sesion"
+    }
+]

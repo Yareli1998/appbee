@@ -1,0 +1,36 @@
+<app-header titulo="Producción"></app-header>
+
+<ion-content>
+    <ion-list>
+
+        <ion-item>
+          <ion-label>Tipo de Cosecha</ion-label>
+          <ion-select multiple="true" [value]="['', '', '']">
+            <ion-select-option value="hormiga">Miel</ion-select-option>
+            <ion-select-option value="barroa">Cera</ion-select-option>
+            <ion-select-option value="escarabajo">Propoleo</ion-select-option>
+            <ion-select-option value="ninguna">Jalea Real</ion-select-option>
+            <ion-select-option value="ninguna">Abeja Reyna</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">Cantidad de Cosecha</ion-label>
+           <ion-input type="text"
+                        [(ngModel)]="cosecha"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Fecha de Cosecha</ion-label>
+             <ion-input type="text"
+                          [(ngModel)]="fecha_cosecha"></ion-input>
+              </ion-item>
+
+
+    </ion-list>
+
+    <ion-button expand="full" type="submit" color="warning">
+        Guardar
+      </ion-button>
+  
+</ion-content>
